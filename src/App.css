@@ -1,11 +1,16 @@
+/* Importing the font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* Root variables */
 :root {
   --red: #d01c28;
   --gray: #2e2e2e;
 }
+
+/* Global styles */
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -20,7 +25,10 @@ button {
   height: 32px;
   color: white;
   font-weight: 500;
+  cursor: pointer;
 }
+
+/* Container for centering content */
 .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -33,7 +41,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 /* Logo styles */
@@ -56,7 +63,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none; /* Remove underline */
-  color: #000000; /* White text color */
+  color: black; /* White text color */
   font-weight: 500; /* Medium font weight */
   transition: color 0.3s ease; /* Smooth transition for color changes */
 }
@@ -99,36 +106,67 @@ nav button:hover {
   background-color: #0056b3; /* Darker shade on hover */
 }
 
+/* Responsive styles for navigation */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 16px;
+  }
 
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+
+  nav .countdown {
+    margin-top: 16px; /* Add margin to separate from nav links */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Hero section styles */
 .hero {
   display: flex;
   align-items: center;
-  height: calc(100vh - 85px);
+  justify-content: center;
+  height: calc(100vh - 85px); /* Adjust height based on nav height */
+  padding: 0 16px; /* Add padding for smaller screens */
+  text-align: center;
 }
+
 .hero-content {
   display: flex;
   flex-direction: column;
   gap: 36px;
-  
 }
+
 .hero h1 {
   font-weight: 800;
-  line-height: 102px;
-  font-size: 108px;
+  line-height: 1.1;
+  font-size: 4rem; /* Adjust font size */
 }
+
 .hero p {
   font-weight: 600;
   color: var(--gray);
   max-width: 600px;
+  margin: 0 auto;
 }
 
 .hero-btn {
   display: flex;
   gap: 40px;
+  justify-content: center;
 }
+
 .hero-btn button {
   font-size: 24px;
 }
+
 .secondary-btn {
   background: transparent;
   color: var(--gray);
@@ -139,6 +177,7 @@ nav button:hover {
   font-size: 14px;
   margin-bottom: 8px;
 }
+
 .brand-icons {
   display: flex;
   gap: 16px;
