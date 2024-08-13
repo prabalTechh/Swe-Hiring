@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --red: #d01c28;
+  --gray: #2e2e2e;
+}
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+button {
+  all: unset;
+  padding: 6px 16px;
+  background: var(--red);
+  height: 32px;
+  color: white;
+  font-weight: 500;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+/* General navigation container styles */
+nav {
+  color: #ffffff; /* White text color */
+  padding: 16px 32px; /* Padding for space inside the nav */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+/* Logo styles */
+nav .logo img {
+  height: 40px; /* Adjust logo size */
+}
+
+/* Navigation links styles */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 24px; /* Space between links */
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: #000000; /* White text color */
+  font-weight: 500; /* Medium font weight */
+  transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+nav ul li a:hover {
+  color: #ffc107; /* Highlight color on hover */
+}
+
+/* Countdown styles */
+nav .countdown {
+  background: linear-gradient(45deg, #ff6f61, #ffcc00); /* Gradient background */
+  color: #ffffff; /* White text color */
+  padding: 5px 10px; /* Padding around the text */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1.2rem; /* Slightly larger font size */
+  font-weight: 700; /* Bold font weight */
+  display: inline-block; /* Ensure padding and background are applied correctly */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+nav .countdown:hover {
+  background: linear-gradient(45deg, #ffcc00, #ff6f61); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Button styles */
+nav button {
+  background-color: #007bff; /* Primary button color */
+  color: #ffffff; /* White text color */
+  border: none; /* Remove default border */
+  padding: 8px 16px; /* Padding around the text */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  font-weight: 500; /* Medium font weight */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for color changes */
+}
+
+nav button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 85px);
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  
+}
+.hero h1 {
+  font-weight: 800;
+  line-height: 102px;
+  font-size: 108px;
+}
+.hero p {
+  font-weight: 600;
+  color: var(--gray);
+  max-width: 600px;
+}
+
+.hero-btn {
+  display: flex;
+  gap: 40px;
+}
+.hero-btn button {
+  font-size: 24px;
+}
+.secondary-btn {
+  background: transparent;
+  color: var(--gray);
+  border: 1px solid gray;
+}
+
+.shopping p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.brand-icons {
+  display: flex;
+  gap: 16px;
+}
